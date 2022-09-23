@@ -88,3 +88,10 @@ p {
 .back, .next {
   font-size: 20px;
 }
+
+@media only screen and (max-width: 800px) {
+  body {
+    width: 50%;
+  }
+
+}
