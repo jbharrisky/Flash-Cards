@@ -6,14 +6,15 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background: #f2f5f7;
+  background-color: #f2f5f7;
+  font-size: 1.5em;
 }
 
 /* styling for the card section */
 .thecard {
-    height: 350px;
-    width: 650px;
-    position: relative;
+    height: 550px;
+    width: 850px;
+    /* position: relative; */
     transform-style: preserve-3d;
     transition: all 0.75s ease;
     cursor: pointer;
@@ -26,21 +27,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3em;
+    
     border-radius: 10px;
     position: absolute;
   }
 
 /* visibility and z index of card front */
   .cardFront {
-    background: white;
+    background-color: white;
     z-index: 2;
     backface-visibility: hidden;
   }
 
 /* z index and transform style for card back */
   .cardBack {
-    background: white;
+    background-color: white;
     z-index: 1;
     transform: rotateX(180deg);
   }
@@ -48,7 +49,7 @@ body {
 /* style for all paragraph elements */
 p {
  text-align: center;
- font-size: 24px;
+ font-size: 2rem;
  padding: 1.5rem;
 }
 
@@ -60,7 +61,6 @@ p {
 .flipBack {
   transform: rotateX(180deg);
 }
-
 
 /* styling the perspective of the card container */
 /* .container{
