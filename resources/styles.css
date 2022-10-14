@@ -6,14 +6,13 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  background-color: #f2f5f7;
-  font-size: 1.5em;
+  background: #f2f5f7;
 }
 
 /* styling for the card section */
 .thecard {
-    height: 550px;
-    width: 850px;
+    height: 350px;
+    width: 650px;
     /* position: relative; */
     transform-style: preserve-3d;
     transition: all 0.75s ease;
@@ -27,7 +26,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    font-size: 4em;
     border-radius: 10px;
     position: absolute;
   }
@@ -49,7 +48,7 @@ body {
 /* style for all paragraph elements */
 p {
  text-align: center;
- font-size: 2rem;
+ font-size: 24px;
  padding: 1.5rem;
 }
 
@@ -89,3 +88,24 @@ p {
   font-size: 20px;
 }
 
+@media screen and (max-device-width: 800px) {
+  .thecard {
+    height: 450px;
+    width: 850px;
+  }
+
+  p  {
+    font-size: 2.5rem;
+  }
+
+  .back,.next, .slash {
+    font-size: 2.5rem;
+    padding: 3px;
+  }
+
+  .current, .total {
+    font-size: 2.5rem;
+    padding: 0 20px;
+  }
+  
+}
