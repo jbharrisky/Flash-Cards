@@ -94,7 +94,7 @@ p {
     width: 850px;
   }
 
-  p  {
+  p, h1  {
     font-size: 2.5rem;
   }
 
